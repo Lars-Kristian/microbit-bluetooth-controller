@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="flex-column" onload="loadController()">
+<div>
+    <button id="connect-button" onclick="onClickConnect()">Connect</button>
+    <button id="disconnect-button" onclick="onClickDisconnect()">Disconnect</button>
+    <label id="status-label"></label>
+</div>
+
+<div class="flex-fill flex-row">
+    <div class="buttons">
+        <div class="square-panel button-grid">
+            <button class="up noselect" data-button-value="up" >Up</button>
+            <button class="right noselect" data-button-value="right">Right</button>
+            <button class="down noselect" data-button-value="down">Down</button>
+            <button class="left noselect" data-button-value="left">Left</button>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="square-panel button-grid">
+            <button class="down noselect" data-button-value="a">A</button>
+            <button class="left noselect" data-button-value="b">B</button>
+            <button class="right noselect" data-button-value="x">X</button>
+            <button class="up noselect" data-button-value="y">Y</button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
